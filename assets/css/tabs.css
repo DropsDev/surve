@@ -1,0 +1,187 @@
+
+  [ripple] {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  [ripple] .ripple {
+    position: absolute;
+    background: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    -webkit-animation: ripple 1.6s;
+            animation: ripple 1.6s;
+  }
+  
+  @-webkit-keyframes ripple {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0.2;
+    }
+    100% {
+      -webkit-transform: scale(40);
+              transform: scale(40);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes ripple {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0.2;
+    }
+    100% {
+      -webkit-transform: scale(40);
+              transform: scale(40);
+      opacity: 0;
+    }
+  }
+  .tabs {
+    z-index: 15px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 30px auto 10px;
+    overflow: hidden;
+  }
+  .tabs-header {
+    position: relative;
+    background: #F5F6FA;
+    overflow: hidden;
+  }
+  .tabs-header .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   background: linear-gradient(to right, #9E7CC1, #8ECDEA);;
+    width: auto;
+    height: 2px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .tabs-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: calc(100% - 68px);
+  }
+  .tabs-header li {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    list-style: none;
+  }
+  .tabs-header a {
+    z-index: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 20px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .tabs-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #F5F6FA;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    color: #333;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .tabs-nav:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -webkit-box-shadow: 0 0 20px 10px #F5F6FA;
+            box-shadow: 0 0 20px 10px #F5F6FA;
+  }
+  .tabs-nav i {
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .tabs-content {
+    position: relative;
+    padding-bottom:50px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+  .tabs-content:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    -webkit-box-shadow: 0 0 20px 10px #FFFFFF;
+            box-shadow: 0 0 20px 10px #FFFFFF;
+  }
+  .tabs-content .tab {
+    display: none;
+  }
+  .tabs-content .tab.active {
+    display: block;
+  }
+  
+  .pen-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 600px;
+    margin: 20px auto 100px;
+  }
+  .pen-footer a {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  .pen-footer a .material-icons {
+    width: 12px;
+    margin: 0 5px;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+  
+  .cp-fab {
+    background: #FFFFFF !important;
+    color: #4285F4 !important;
+  }
+  

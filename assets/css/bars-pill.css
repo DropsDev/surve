@@ -8,7 +8,7 @@
 
 .br-default .br-unit {
   padding: 7px 15px;
-  background-color: #bef5e8;
+  background-color: #F6F7FB;
   color: #fff;
   text-decoration: none;
   font-size: 13px;
@@ -17,16 +17,16 @@
   font-weight: 600;
 }
 .br-default .br-unit.br-selected{
-  background-color: #50E3C2;
+  background-color: #00A0F8;
 }
 .br-default .br-unit.br-active {
-  background-color: #50E3C2;
+  background-color: #00A0F8;
 }
 
 .br-default .br-unit:after {
   content: counter(counter);
   counter-increment: counter;
-  color: #fff
+  color: #333
 }
 
 
